@@ -8,7 +8,7 @@
  * Controller of the AvianServer
  */
 angular.module('AvianServer')
-  .controller('IndexCtrl', function ($scope, $location, $modal, /*User, Auth, Subscriber, ContactDetail*/) {
+  .controller('IndexCtrl', function ($scope, $location, $modal){ //User, Auth, Subscriber, ContactDetail*/) {
     $scope.subscribetext = 'Subscribe to get the latest news from Avian Robotics.';
     $scope.subscribed = false;
 
