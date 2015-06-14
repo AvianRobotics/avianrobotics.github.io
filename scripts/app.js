@@ -11,6 +11,5 @@
 angular
   .module('AvianServer', [
     'ui.router',
-    'ui.bootstrap',
-    'lbServices'
+    'ui.bootstrap'
   ]);
