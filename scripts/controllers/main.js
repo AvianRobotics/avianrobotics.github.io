@@ -8,9 +8,7 @@
  * Controller of the AvianServer
  */
 angular.module('AvianServer')
-  .controller('MainCtrl', function ($scope, $location, User, Auth, AnchorSmoothScroll) {
-    Auth.ensureHasCurrentUser(User);
-    $scope.userState = Auth.getUserState();
+  .controller('MainCtrl', function ($scope, $location, AnchorSmoothScroll) {
 
     $scope.isLandingPage = function() {
       if ($location.path() === '/') {
