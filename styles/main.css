@@ -1,0 +1,356 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+@font-face {
+  font-family: Hero;
+  src: url("../fonts/hero.otf") format("opentype");
+}
+
+#content {
+  height: 100%;
+}
+
+.vertical-align-parent {
+  display: table;
+  height: 100%;
+}
+
+.vertical-align-child {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-width: 0px;
+  height: 60px;
+  padding-top: 5px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #bbbbbb;
+  font-size: 18px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #75C9F1;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #75C9F1;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: #fff;
+  border-width: 0px;
+  z-index: 1;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #6fb4bb;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #fff;
+}
+
+.navbar-brand
+{
+  position: relative;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.logo {
+  margin-top: -10px;
+  height: 43px;
+}
+
+.navbar-transparent-start {
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.navbar-transparent-end {
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.masthead {
+  height: 100%;
+  background-color: #000;
+}
+
+.masthead-background {
+  height: 100%;
+  background-image: url("../images/backgrounds/masthead.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.masthead-text {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  margin-top: auto;
+  position: absolute;
+  top: 0%; 
+  left: 0%; 
+  bottom: 0%; 
+  right: 0%;
+  color: #fff;
+}
+
+.masthead-text h2 {
+  font-weight: 300;
+}
+
+.modal-video { 
+  padding-top: 5px;
+}
+
+.masthead-signup {
+  width: 100%;
+  max-width: 500px;
+}
+
+.featurette {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+.parallax-lead {
+  font-size: 30px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+footer .lead {
+  margin-bottom: 0px;
+}
+
+.footer-separation {
+  padding-left: 10px
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 767px) { 
+  .navbar-nav li {
+    text-align: center;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    border-bottom-width: 0px;
+    height: 100%;
+  }
+
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    border-bottom-width: 0px;
+    height: 100%;
+  }
+
+  .parallax-lead {
+    font-size: 14px;
+  }
+
+  .parallax-sub-lead {
+    font-size: 12px;
+  }
+}
+
+.skrollr-desktop body {
+  height: 100% !important;
+}
+
+.parallax-image-wrapper {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.parallax-image-wrapper-50 {
+  height: 50%;
+  top: -50%;
+}
+
+.parallax-image-wrapper-100 {
+  height: 100%;
+  top: -100%;
+}
+
+.parallax-image {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax-image-50 {
+  height: 200%;
+  top: -50%;
+}
+
+.parallax-image-100 {
+  height: 100%;
+  top: 0;
+}
+
+.parallax-image.skrollable-between {
+  display: block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+  display: none !important;
+}
+
+#parallax-body {
+  height: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+.gap {
+  background: transparent center no-repeat;
+  background-size: cover;
+}
+
+.skrollr .gap {
+  background: transparent !important;
+}
+
+.gap-50 {
+  height: 50%;
+}
+
+.gap-100 {
+  height: 100%;
+}
+
+/* 2D TRANSITIONS */
+/* Grow */
+.grow {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.grow:hover, .grow:focus, .grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hover {
+  display: inline-block;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hover:hover, .hover:focus, .hover:active {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  -webkit-animation-name: hover;
+  animation-name: hover;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.sidebar {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.sidebar h4 {
+  font-weight: 300;
+  color: #bbbbbb;
+}
+
+.sidebar span {
+  font-weight: 300;
+  color: #75C9F1;
+}

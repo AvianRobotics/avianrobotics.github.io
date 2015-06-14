@@ -1,0 +1,298 @@
+<div
+  class="parallax-image-wrapper parallax-image-wrapper-50"
+  data-anchor-target="#parallax-1 + .gap"
+  data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+  data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+  <div
+    class="parallax-image parallax-image-50"
+    style="background-image:url(../images/backgrounds/featurette4.jpg)"
+    data-anchor-target="#parallax-1 + .gap"
+    data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+    data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+  ></div>
+  <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+</div>
+
+<div
+  class="parallax-image-wrapper parallax-image-wrapper-50"
+  data-anchor-target="#parallax-2 + .gap"
+  data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+  data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+  <div
+    class="parallax-image parallax-image-50"
+    style="background-image:url(../images/backgrounds/featurette5.jpg)"
+    data-anchor-target="#parallax-2 + .gap"
+    data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+    data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+  ></div>
+</div>
+
+<div
+  class="parallax-image-wrapper parallax-image-wrapper-50"
+  data-anchor-target="#parallax-3 + .gap"
+  data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+  data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+  <div
+    class="parallax-image parallax-image-50"
+    style="background-image:url(../images/backgrounds/featurette6.jpg)"
+    data-anchor-target="#parallax-3 + .gap"
+    data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+    data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+  ></div>
+</div>
+
+<div id="home" skrollr class="masthead">
+  <video autoplay loop style="object-fit: fill; height: 100%; width: 100%">
+    <source src="../images/videos/video.mp4" type="video/mp4">
+  </video>
+  <div class="masthead-text vertical-align-parent">
+    <div class="vertical-align-child center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 left">
+            <div>
+              <h2>PATROL <b>SURVEILLANCE</b> WITHOUT BLIND SPOTS</h2>
+              <p class="lead">Avian Robotics develops drone security systems for public safety and security applications to reduce emergency response time and minimize risk to human life.</p>
+            </div>
+            <br />
+            <h5 ng-bind="subscribetext">Subscribe to get the latest news from Avian Robotics.</h5>
+            <form class="form-horizontal masthead-signup" role="form" data-ng-submit="subscribe()">
+              <div class="input-group">
+                <input type="text" class="form-control input-lg light" ng-model="email" placeholder="YOUR EMAIL" required />
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-lg btn-success light" ng-disabled="subscribed">SIGN UP FOR SAFETY</button>
+                </span>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="col-md-3 hover" style="padding-top: 50px">
+            <img ng-click="playVideo()" src="../images/images/thumbnail.png" class="width-100 pointer"></img>
+            <p class="lead">Watch the Video</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="parallax-body">
+  <span id="features"></span>
+  <div id="parallax-1" class="container featurette">
+    <h1>Features</h1>
+    <br /><br />
+    <div class="row">
+      <div class="col-md-3">
+        <img src='../images/images/icon1.png' style="height: 100px"> 
+        <br /><br />
+        <h3>Complete remote surveillance solution</h3>
+        <p class="lead">A complete cloud-connected surveillance solution for your business using drones to monitor and patrol your property.</p>
+      </div>
+      <div class="col-md-3">
+        <img src='../images/images/icon2.png' style="height: 100px"> 
+        <br /><br />
+        <h3>Autonomous flight patrol</h3>
+        <p class="lead">Our indoor autopilot allows drones to autonomously fly both pre-programmed and randomized routes for full coverage.</p>
+      </div>
+      <div class="col-md-3">
+        <img src='../images/images/icon3.png' style="height: 100px"> 
+        <br /><br />
+        <h3>React quickly to emergencies</h3>
+        <p class="lead">Intrusions are automatically detected and notifications are delivered through the cloud to your devices so you can respond quickly.</p>
+      </div>
+      <div class="col-md-3">
+        <img src='../images/images/icon4.png' style="height: 100px"> 
+        <br /><br />
+        <h3>Effective security for less</h3>
+        <p class="lead">Our solution will reduce the costs of setting up cameras and deploying officers while reducing response times and increasing coverage.</p>
+      </div>
+    </div>
+    <br /><br />
+    <div class="row">
+      <div class="col-md-3">
+        <img src='../images/images/icon5.png' style="height: 100px"> 
+        <br /><br />
+        <h3>HD video streaming and surveillance</h3>
+        <p class="lead">Capture or view up to 1080p quality video live from your drones with no latency over a secure connection through the internet.</p>
+      </div>
+      <div class="col-md-3">
+        <img src='../images/images/icon6.png' style="height: 100px"> 
+        <br /><br />
+        <h3>Remote control over the internet</h3>
+        <p class="lead">The drone uses your existing Wi-Fi to provide manual control using a web browser or mobile device for teleoperated control.</p>
+      </div>
+      <div class="col-md-3">
+        <img src='../images/images/icon7.png' style="height: 100px"> 
+        <br /><br />
+        <h3>Integrates with your security infrastructure</h3>
+        <p class="lead">Avian’s drones can work with your existing security infrastructure and can be easily integrated with current systems.</p>
+      </div>
+      <div class="col-md-3">
+        <img src='../images/images/icon8.png' style="height: 100px"> 
+        <br /><br />
+        <h3>Cost effective and easily customizable</h3>
+        <p class="lead">Parts can be easily customized, upgraded and replaced using Avian’s 3D printed manufacturing process.</p>
+      </div>
+    </div>
+  </div>
+  <div class="gap gap-50 container left vertical-align-parent">
+    <div class="vertical-align-child quote" style="color: #fff">
+      <p class="lead parallax-lead">&ldquo;This is pretty cutting edge technology for the security industry, and it’s an idea we’ve been contemplating for some time.&rdquo;</p>
+      <p class="lead parallax-sub-lead right"><b>Steven MacLean</b>, <i>Director, Security at Simon Fraser University</i></p>
+    </div>
+  </div>
+  <span id="team"></span>
+  <div id="parallax-2" class="container featurette">
+    <h1>Team</h1>
+    <br/><br/>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1">
+        <a href="https://www.linkedin.com/profile/view?id=251792652"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/mark.jpg"></img></a>
+         <br /><br />
+        <p class="lead"><b>Mark Anthony Wijaya</b><br />Co-founder<br />CEO</p>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.linkedin.com/profile/view?id=186040267"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/akshay.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>Akshay Budhiraja</b><br />Co-founder<br />CTO</p>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.linkedin.com/pub/michael-dyatchenko/50/513/6a5"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/michael.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>Michael Dyatchenko</b><br />Co-founder<br />COO</p>
+      </div>
+    </div>
+    <br /><br />
+    <div class="row">
+      <div class="col-md-3">
+        <a href="https://www.linkedin.com/profile/view?id=336048844"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/shakir.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>Shakir Ali</b><br />Hardware Engineer</p>
+      </div>
+      <div class="col-md-3">
+        <img class="img-circle" style="height: 200px; width: 200px" src="../images/images/kelvin.jpg"></img>
+        <br /><br />
+        <p class="lead"><b>Kelvin Chu</b><br />Computer Vision Engineer</p>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.linkedin.com/in/stevenhuangvancouver"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/stevenh.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>Steven Huang</b><br />Software Engineer</p>
+      </div>
+      <div class="col-md-3">
+        <a href="https://ca.linkedin.com/in/refayet"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/refayet.png"></img></a>
+        <br /><br />
+        <p class="lead"><b>Refayet Siam</b><br />Hardware Design Engineer</p>
+      </div>
+    </div>
+    <br /><br />
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1">
+        <a href="https://ca.linkedin.com/pub/christopher-nsimbe/48/1b3/b7a"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/christopher.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>Christopher Nsimbe</b><br />Robotics Engineer</p>
+      </div>
+      <div class="col-md-4">
+        <a href="https://ca.linkedin.com/in/davidchrisbaldwin"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/david.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>David Baldwynn</b><br />Software Engineer</p>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.linkedin.com/profile/view?id=140112655"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/george.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>George Xu</b><br />Software Consultant</p>
+      </div>
+    </div>
+    <br /><br />
+    <div class="row">
+    <div class="col-md-3">
+        <a href="https://ca.linkedin.com/in/iainmbegg"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/iain.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>Iain Begg</b><br />Mentor<br />Mentor-in-Residence at SFU Venture Connection</p>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.linkedin.com/profile/view?id=10508412"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/sarah.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>Sarah Lubik</b><br />Advisor<br />Director of Entrepreneurship at Simon Fraser University</p>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.linkedin.com/pub/steven-maclean/33/387/698"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/steven.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>Steven MacLean</b><br />Advisor<br />Director of Security at Simon Fraser University</p>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.linkedin.com/in/hermanchandi"><img class="img-circle grow" style="height: 200px; width: 200px" src="../images/images/herman.jpg"></img></a>
+        <br /><br />
+        <p class="lead"><b>Herman Chandi</b><br />Mentor<br />VP of Business Development at Procurify</p>
+      </div>
+    </div>
+  </div>
+  <div class="gap gap-50 container vertical-align-parent">
+    <div class="vertical-align-child quote" style="color: #fff">
+      <p class="lead parallax-lead">&ldquo;With an innovative and cool product, a passionate team and a clear user need, Avian Robotics has everything they need to succeed.&rdquo;</p>
+      <p class="lead parallax-sub-lead right"><b>Sarah Lubik</b>, <i>Director, Technology Entrepreneurship at Simon Fraser University</i></p>
+    </div>
+  </div>
+  <span id="press"></span>
+  <div id="parallax-3" class="container featurette">
+    <h1>Press</h1>
+     <p class="lead parallax-lead">Check out what the media have been saying about us</p>
+    <br/><br/>
+    <div class="row">
+      <div class="col-md-2 grow">
+        <a href="http://www.vancouversun.com/business/students+apply+printing+drone+aircraft/10846118/story.html">
+          <img style="width: 150px" src="../images/images/vancouversun.png"></img>
+        </a>
+      </div>
+      <div class="col-md-2 grow">
+        <a href="http://www.cbc.ca/news/canada/british-columbia/drone-made-by-3d-printer-built-by-sfu-s-avian-robotics-team-1.2981215">
+          <img style="width: 150px" src="../images/images/cbc.png"></img>
+        </a>
+      </div>
+      <div class="col-md-2 grow">
+        <a href="http://globalnews.ca/video/1866982/sfu-students-design-drone">
+          <img style="width: 150px" src="../images/images/global.png"></img>
+        </a>
+      </div>
+      <div class="col-md-2 grow">
+        <a href="http://vancouver.24hrs.ca/2015/02/26/sfu-group-creates-smart-drone">
+          <img style="width: 150px" src="../images/images/24hrs.png"></img>
+        </a>
+      </div>
+      <div class="col-md-2 grow">
+        <a href="http://www.techvibes.com/blog/drone-valley-2015-04-13">
+          <img style="width: 150px" src="../images/images/techvibes.png"></img>
+        </a>
+      </div>
+      <div class="col-md-2 grow">
+        <a href="https://www.biv.com/article/2015/4/drone-technology-takes-british-columbia/">
+          <img style="width: 150px" src="../images/images/biv.jpg"></img>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="gap gap-50 container vertical-align-parent">
+    <div class="vertical-align-child quote" style="color: #fff">
+      <p class="lead parallax-lead">&ldquo;You're [Avian Robotics] printing something that has lots of moving parts and that can be of practical use and application. I think 3D printing drones is going to be awesome, not just because it's cool, but because it allows us to connect on so many different levels.&rdquo;</p>
+      <p class="lead parallax-sub-lead right"><b>Jan Kietzmann</b>, <i>Associate Professor, Innovation and Entrepreneurship at Simon Fraser University</i></p>
+    </div>
+  </div>
+  <span id="contact"></span>
+  <div class="container featurette">
+    <form role="form" data-ng-submit="leaveMessage()">
+      <h1>Contact Us</h1>
+      <p class="lead" ng-bind="contacttext">If you're interested in learning more about how Avian Robotics can help you, leave us a message.</p>
+      <input type="text" class="form-control input-lg light" ng-model="contactName" placeholder="YOUR NAME" required />
+      <br />
+      <input type="text" class="form-control input-lg light" ng-model="contactEmail" placeholder="YOUR EMAIL" required />
+      <br />
+      <textarea class="form-control input-lg light" rows="5" ng-model="contactMessage" placeholder="YOUR MESSAGE" required></textarea>
+      <br />
+      <button type="submit" class="btn btn-lg btn-danger light" ng-disabled="contacted">GET IN TOUCH</button>
+    </form>
+  </div>
+  
+  <div ng-include src="'views/includes/footer.html'"></div>
+</div>

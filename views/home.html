@@ -1,0 +1,74 @@
+<div class="row" style="height: 100%">
+    <div class="col-md-2 text-center sidebar">
+        <br /><br /><br /><br />
+        <div class="row">
+            <div class="row">
+                <button id="button_up" type="button" class="btn btn-primary btn-lg button-movement">
+                    <i class="fa fa-arrow-up"></i>
+                </button>              
+            </div>
+            <div style="height: 4px"></div>
+            <div class="row">
+                <button id="button_left" type="button" class="btn btn-primary btn-lg button-movement">
+                    <i class="fa fa-arrow-left"></i>
+                </button>
+                <button id="button_down" type="button" class="btn btn-primary btn-lg button-movement">
+                    <i class="fa fa-arrow-down"></i>
+                </button>
+                <button id="button_right" type="button" class="btn btn-primary btn-lg button-movement">
+                    <i class="fa fa-arrow-right"></i>
+                </button>
+            </div>
+            <br /><br />
+            <button type="button" class="btn btn-info btn-lg" style="width: 175px; font-weight: 300"><i class="fa fa-angle-double-up"></i> ALTITUDE +</button>
+            <div style="height: 4px"></div>
+            <button type="button" class="btn btn-success btn-lg" style="width: 175px; font-weight: 300"><i class="fa fa-angle-double-down"></i> ALTITUDE -</button>
+            <br /><br /><br />
+            <div class="row">
+                <button type="button" class="btn btn-danger btn-lg" style="width: 175px; font-weight: 300"><i class="fa fa-home"></i> RETURN HOME</button>
+                <div style="height: 4px"></div>
+                <button type="button" class="btn btn-danger btn-lg" style="width: 175px; font-weight: 300"><i class="fa fa-plane"></i> CIRCLE SPOT</button>
+                <div style="height: 4px"></div>
+                <button type="button" class="btn btn-danger btn-lg" style="width: 175px; font-weight: 300" ng-click="saveTrim()"><i class="fa fa-save"></i> SAVE TRIMS</button>
+            </div>
+            <!-- <br />
+            <button type = "button" class = "btn btn-warning btn-lg" ng-click="sayHello()">Test Connection</button> -->
+        </div>
+    </div>
+    <div class="col-md-8" style="height: 100%; background-color: rgba(240, 240, 240, 1);">
+        <br /><br /><br /><br />
+        <!-- <h1>Control the <span style = "color:#AFD136"> Mosquito! </span></h1> -->
+        
+           <object width="100%" height="67%"> <param name="movie" value="../StrobeMediaPlayback.swf"></param><param name="flashvars" value="src=rtmp%3A%2F%2Fwww.cloudyrobotics.com%2Flive%2Ftest&streamType=live&optimizeBuffering=false&bufferTime=0&initialBufferTime=0&expandedBufferTime=0&liveBufferTime=0&minContinuousPlaybackTime=0&autoPlay=true"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="direct"></param><embed id="videostreamwebkit" src="../StrobeMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="direct" width="432" height="240" flashvars="src=rtmp%3A%2F%2Fwww.avianrobotics.com%2Flive%2Ftest&streamType=live&optimizeBuffering=false&bufferTime=0&initialBufferTime=0&expandedBufferTime=0&liveBufferTime=0&minContinuousPlaybackTime=0&autoPlay=true"></embed></object>
+        
+<!--        <object width="100%" height="67%"> <param name="movie" value="../StrobeMediaPlayback.swf"></param><param name="flashvars" value="src=rtmp%3A%2F%2F192.168.0.102%2Flive%2Ftest&streamType=live&optimizeBuffering=false&bufferTime=0&initialBufferTime=0&expandedBufferTime=0&liveBufferTime=0&minContinuousPlaybackTime=0&autoPlay=true"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="direct"></param><embed id="videostreamwebkit" src="../StrobeMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="direct" width="432" height="240" flashvars="src=rtmp%3A%2F%2F192.168.0.102%2Flive%2Ftest&streamType=live&optimizeBuffering=false&bufferTime=0&initialBufferTime=0&expandedBufferTime=0&liveBufferTime=0&minContinuousPlaybackTime=0&autoPlay=true"></embed></object>-->
+        
+        <!-- <object id="videostream" width="100%" height="100%" style="height: 440px; width = 100px; margin: 0 auto;"> <param name="movie" value="StrobeMediaPlayback.swf"><param name="flashvars" value="src=rtmp%3A%2F%2F192.168.0.100%2Flive%2Flynx&amp;streamType=live&amp;optimizeBuffering=false&amp;bufferTime=0&amp;initialBufferTime=0&amp;expandedBufferTime=0&amp;liveBufferTime=0&amp;minContinuousPlaybackTime=0&amp;autoPlay=true"><param name="allowFullScreen" value="false"><param name="allowscriptaccess" value="always"><param name="wmode" value="direct"><embed id="videostreamwebkit" src="StrobeMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="direct" width="100%" height="100%" flashvars="src=rtmp%3A%2F%2F192.168.0.100%2Flive%2Flynx&amp;streamType=live&amp;optimizeBuffering=false&amp;bufferTime=0&amp;initialBufferTime=0&amp;expandedBufferTime=0&amp;liveBufferTime=0&amp;minContinuousPlaybackTime=0&amp;autoPlay=true" style="height: 55.5px;"></object> -->
+
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d651.875313132139!2d-122.84924!3d49.19105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDExJzI3LjgiTiAxMjLCsDUwJzU3LjMiVw!5e0!3m2!1sen!2sca!4v1429922308393" width="100%" height="20%" frameborder="0" style="border: 2px black solid"></iframe> -->
+
+        <img src='../images/gps.png' style="width: 100%; height: 20%; border: 2px black solid;"> 
+    </div>
+    <div class="col-md-2 text-center sidebar">
+        <br /><br /><br /><br />
+        <div><h4>THROTTLE</h4><span id="throttleValue">{{throttle}}</span></div>
+        <br />
+        <div><h4>ROLL</h4><span id="rollValue">{{roll}}</span></div>
+        <br />
+        <div><h4>PITCH</h4><span id="pitchValue">{{pitch}}</span></div>
+        <br />
+        <div><h4>YAW</h4><span id="yawValue">{{yaw}}</span></div>
+        <br />
+        <div><h4>FLIGHT MODE</h4><span id="flightMode">{{flightMode}} {{trimStatus}}</span></div>
+        <br />
+        <div><h4>ARM STATUS</h4><span id="armStatus">{{armStatus}}</span></div>
+        <!-- <br />
+        <div><h4>ALTITUDE HOLD GAUGE</h4><span id="altStatus">{{altStatus}}</span></div>
+        <br />
+        <div><h4>AUX 1 - FLIGHT MODE</h4><span id="aux1Value">{{aux1}}</span></div> -->
+        <br />
+        <div><h4>PID</h4><span id="aux2Value">{{aux2}}</span></div>
+        <!-- <br />
+        <div><h4>AUX 3 - SAVE TRIM</h4><span id="aux3Value">{{aux3}}</span></div> -->
+    </div>
+</div>

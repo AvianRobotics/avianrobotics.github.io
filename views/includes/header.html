@@ -1,0 +1,46 @@
+<nav ng-show="!isLandingPage()" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand"><a ng-href="/"><img class="logo" src='images/logo.png'></img></a></div>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ng-href="/home">HOME</a></li>
+        <li ng-show="userState.isLoggedIn"><a class="pointer" ng-click="logout()">LOG OUT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav ng-show="isLandingPage()" skrollr data-0="@class: navbar navbar-default navbar-fixed-top;" data-1p="@class: navbar navbar-default navbar-fixed-top;" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+<!--       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> -->
+      <div class="navbar-brand"><a ng-href="/"><img class="logo" src='images/logo_skyblue.png'></img></a></div>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ng-click="gotoElement('home')" class="lead pointer">Home</a></li>
+        <li><a ng-click="gotoElement('features')" class="lead pointer">Features</a></li>
+        <li><a ng-click="gotoElement('team')" class="lead pointer">Team</a></li>
+        <li><a ng-click="gotoElement('press')" class="lead pointer">Press</a></li>
+        <li><a ng-click="gotoElement('contact')" class="lead pointer">Contact Us</a></li>
+        <li ng-show="userState.isLoggedIn"><a class="pointer" ng-click="logout()">Log Out</a></li>
+        <li><a href="http://facebook.com/avianrobotics"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://twitter.com/avianrobotics"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://ca.linkedin.com/company/avian-robotics"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
